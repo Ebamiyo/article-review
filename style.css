@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Manrope', sans-serif;
+    color: hsl(217, 19%, 35%)
+}
+
+.drawers-img, .drawers-img-div {
+    width: 300px;
+    height: 250px;
+    border-radius: 0.7rem 0 0 0.7rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 100vh;
+    border-radius: 1rem;
+    margin: auto;
+}
+
+.second-div {
+    padding: 1.5rem;
+    background-color: white;
+    height: 250px;
+    border-radius: 0 0.7rem 0.7rem 0;
+    position: relative;
+    /* (for the share box to floaton top of the paragraph) */
+    
+}
+
+h3 {
+    padding-bottom: 1rem;
+}
+
+.paragraph-1 {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.user-div {
+    padding-top: 1.5rem;
+    display: flex;
+    position: relative;
+}
+
+.avatar-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.user-info-div {
+    padding-left: 1rem;
+}
+
+.user-name {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.date {
+    font-size: 12px;
+    line-height: 2.2;
+}
+
+.share {
+    text-align: center;
+}
+
+.share:hover {
+    fill: white;
+}
+#share-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 100%;
+    margin-left: 8.9rem;
+    /* position: absolute;
+    right: 0rem; */
+}
+
+#share-button:hover {
+    cursor: pointer;
+    background-color: hsl(217, 19%, 35%);
+}
+
+#share-button:focus {
+    background-color: hsl(217, 19%, 35%);
+}
+
+
+#social-links-container {
+    display: none;
+    position: absolute;
+    left: 14rem;
+    bottom: 8rem;
+    position: relative;
+    background: hsl(217, 19%, 35%);
+    width: 230px;
+    height: 50px;
+    color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 7px 0 hsl(212, 23%, 69%);
+}
+
+#social-links-container:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 0;
+    width: 0;
+    border: 18px solid transparent;
+    border-top-color: hsl(217, 19%, 35%);
+    border-bottom: 0;
+    margin-left: -18px;
+	margin-bottom: -18px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    margin: auto;
+}
+
+.link:hover {
+    cursor: pointer;
+}
+
+.share-el {
+    font-size: 10px;
+    letter-spacing: 5px;
+    color: hsl(212, 23%, 69%);
+}
